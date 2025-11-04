@@ -1,8 +1,6 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
-import hero from "../assets/hero.mp4";
-import { i } from "framer-motion/client";
-
+import video from "/Hero.mp4";
 const info = [
   {
     title: "Projects",
@@ -23,7 +21,7 @@ const Hero = () => {
   return (
     <section className=" flex items-center justify-center min-h-screen   ">
       <video
-        src={hero}
+        src={video}
         autoPlay
         loop
         muted
