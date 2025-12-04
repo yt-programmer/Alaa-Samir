@@ -6,7 +6,7 @@ import Contact from "../components/Home/Contact";
 
 const Home = () => {
   const styleSection =
-    "min-h-screen flex flex-col gap-15 items-center  py-[100px]";
+    "min-h-screen flex flex-col gap-15 items-center py-[100px]";
   return (
     <div className="relative">
       <Hero />
