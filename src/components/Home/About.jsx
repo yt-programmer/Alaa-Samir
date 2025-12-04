@@ -1,6 +1,6 @@
 import React from "react";
 import SectionTitle from "../SectionTitle";
-import project7 from "../../assets/project7.webp";
+import chr from "../../assets/chr.webp";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 const About = ({ styleSection }) => {
@@ -31,7 +31,7 @@ const About = ({ styleSection }) => {
         >
           <img
             loading="lazy"
-            src={project7}
+            src={chr}
             alt="error img"
             className="w-[500px] h-[700px]"
           />
