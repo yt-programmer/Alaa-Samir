@@ -33,7 +33,7 @@ const Projects = ({ styleSection }) => {
                 <img
                   src={item.img}
                   alt="error"
-                  className="max-w-[300px] h-auto "
+                  className="max-w-[300px] h-auto object-fill"
                   loading="lazy"
                 />
               </li>
