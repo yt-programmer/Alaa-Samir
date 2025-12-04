@@ -4,11 +4,11 @@ import video from "/Hero.mp4";
 const info = [
   {
     title: "Projects",
-    value: "+40",
+    value: "+10",
   },
   {
     title: "Expriance",
-    value: "+2",
+    value: "+1",
   },
   {
     title: "Available",
