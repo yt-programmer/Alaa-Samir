@@ -32,7 +32,7 @@ const Hero = () => {
         <h1 className="flex items-center justify-center font-special md:text-[3.5rem] text-[1.5rem] font-medium text-white">
           <Typewriter
             options={{
-              strings: ["Hi, I'm Alaa Samir", "Graphics Designer"],
+              strings: ["Hi, I'm Ashraf Hatem", "Graphics Designer"],
               autoStart: true,
               loop: true,
             }}

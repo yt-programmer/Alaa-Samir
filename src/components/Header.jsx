@@ -30,7 +30,7 @@ const Header = () => {
     <header className="backdrop-blur-sm fixed w-full z-10 text-white">
       <div className="py-[15px] px-[20px] container mx-auto flex items-center justify-between">
         <a href="/" className="font-special text-[1.2rem] font-medium">
-          Alaa Samir
+          Ashraf Hatem
         </a>
         <ul className="hidden gap-4 items-center md:flex">
           {Links.map((link) => (
