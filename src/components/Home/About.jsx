@@ -1,11 +1,13 @@
 import React from "react";
 import SectionTitle from "../SectionTitle";
-import Ashraf from "../../assets/Ashraf.webp";
+import project7 from "../../assets/project7.webp";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 const About = ({ styleSection }) => {
+  const { t } = useTranslation();
   return (
     <section className={styleSection} id="about">
-      <SectionTitle name={"About "} span={"Me"} />
+      <SectionTitle name={t("about")} />
       <div className="container px-[20px]  mx-auto flex flex-col md:flex-row  items-center justify-between gap-10 mt-10">
         <motion.div
           initial={{ x: -100, y: 0, opacity: 0 }}
@@ -14,22 +16,11 @@ const About = ({ styleSection }) => {
           className="w-full text-center md:text-left flex flex-col gap-4"
         >
           <h2 className="text-[1.8rem] font-bold  text-[#1B3C53]">
-            Ashraf Hatem
+            {t("name")}
           </h2>
-          <span className="text-[1rem] font-bold">
-            Graphic Designer & Content Creator (Reels & Videos){" "}
-          </span>
+          <span className="text-[1rem] font-bold">{t("position")}</span>
           <p className="text-gray-600 text-[1.1rem] leading-7  mt-3 ">
-            I'm Ashraf Hatem, a graphic designer with one year of experience in
-            digital content creation. I specialize in graphic design and
-            short-form video production (Reels), with a strong focus on
-            delivering creative concepts that meet clients' needs across various
-            industries. I've worked on numerous successful projects, including
-            logo design, marketing materials, and high-quality video content for
-            brands across social media platforms like Instagram and Facebook. If
-            you're looking for someone to create innovative designs and
-            captivating content that boosts your digital presence, I'm here to
-            turn your ideas into reality.
+            {t("description")}
           </p>
         </motion.div>
         <motion.div
@@ -40,7 +31,7 @@ const About = ({ styleSection }) => {
         >
           <img
             loading="lazy"
-            src={Ashraf}
+            src={project7}
             alt="error img"
             className="w-[500px] h-[700px]"
           />

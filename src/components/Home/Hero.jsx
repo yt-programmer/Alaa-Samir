@@ -1,6 +1,7 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
 import video from "/Hero.mp4";
+import { useTranslation } from "react-i18next";
 const info = [
   {
     title: "Projects",
@@ -8,7 +9,7 @@ const info = [
   },
   {
     title: "Expriance",
-    value: "+1",
+    value: "+3",
   },
   {
     title: "Available",
@@ -18,6 +19,7 @@ const info = [
 ];
 
 const Hero = () => {
+  const { t } = useTranslation();
   return (
     <section
       id="home"
@@ -35,7 +37,7 @@ const Hero = () => {
         <h1 className="flex items-center justify-center font-special md:text-[3.5rem] text-[1.5rem] font-medium text-white">
           <Typewriter
             options={{
-              strings: ["Hi, I'm Ashraf Hatem", "Graphics Designer"],
+              strings: [t("welcome"), t("work")],
               autoStart: true,
               loop: true,
             }}
@@ -51,13 +53,13 @@ const Hero = () => {
                   : "border-r-1 pr-[1rem] border-blue-950"
               }  flex flex-col items-center `}
             >
-              <h2 className="md:text-md text-sm">{item.title}</h2>
+              <h2 className="md:text-md text-sm">{t(`info.${item.title}`)}</h2>
               <p
                 className={`${
                   item.title === "Available" ? "text-[10px] md:text-sm" : ""
                 } text-sm font-bold `}
               >
-                {item.value}
+                {item.title === "Available" ? t("ava") : item.value}
               </p>
             </div>
           ))}

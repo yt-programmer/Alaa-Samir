@@ -1,5 +1,6 @@
 import React from "react";
 import SectionTitle from "../SectionTitle";
+import { useTranslation } from "react-i18next";
 const data = [
   {
     id: 1,
@@ -13,9 +14,10 @@ const data = [
   },
 ];
 const Contact = ({ styleSection }) => {
+  const { t } = useTranslation();
   return (
     <section className={styleSection} id="contact">
-      <SectionTitle name="Get in" span="Touch" />
+      <SectionTitle name={t("contact")} />
       <div className="container px-[20px] mx-auto">
         <ul>
           {data.map((item) => (
@@ -29,7 +31,7 @@ const Contact = ({ styleSection }) => {
                   target="_blank"
                   className="text-blue-600 hover:underline"
                 >
-                  Call me on WhatsApp
+                  {t("call")}
                 </a>
               ) : (
                 <span>{item.contact}</span>

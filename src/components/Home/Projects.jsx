@@ -3,11 +3,13 @@ import SectionTitle from "../SectionTitle";
 import { data } from "../../ProjectsData/projectsData";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
+import { useTranslation } from "react-i18next";
 
 const Projects = ({ styleSection }) => {
+  const { t } = useTranslation();
   return (
     <section id="projects" className={`${styleSection} bg-[#456882] `}>
-      <SectionTitle name={"projects "} span={"completed"} />
+      <SectionTitle name={t("projects")} />
       <div className="container px-[20px] mx-auto ">
         <div className="md:block hidden">
           <ImageList variant="woven" cols={3} gap={8}>
